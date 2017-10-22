@@ -1,0 +1,449 @@
+body{ /*Creates rules that will be followed throughout, unless otherwise specified*/
+  font-size: 15px;
+  line-height: 1.5;
+  font: 15px/1.5 Times New Roman;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-weight: 200; /*Specifies the weight of the font (ultralight, light, regular, heavy/bold)*/
+}
+
+.container{ /*Specifies the width of the container*/
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{ /*Rules that will generally be followed in all (unordered) lists, unless otherwise specified*/
+  margin: 0;
+  padding: 0;
+  margin-top: 1%;
+}
+
+header{ /*Rules that will generally be followed in the header section, unless otherwise specified*/
+  background: white;
+  color: black;
+  padding-top: 30px;
+}
+
+header a{ /*Rules that are followed in all links in the header section (all of which are within the navigation bar)*/
+  color: white;
+  text-decoration: none; /*Gets rid of the underline that exists by default in all links*/
+  font-size: 16px;
+}
+
+header ul li{ /*Rules that are followed in all list items within unordered lists in the header section (all of which are within the navigation bar)*/
+  float: left;
+  display: inline;
+  background-color: #DE4043;
+  padding: 10px 20px 10px 20px; /*Specifies the padding for the top, right, bottom, and left (in that order) of the list items*/
+  text-align: center;
+
+}
+
+#leftEdge{ /*Specifies the border characteristics of the left hand side of the navigation bar*/
+  border-radius: 5px 0px 0px 5px; /*Adds curvature, specifying in the order of top left, top right, bottom right, bottom left*/
+  border-left-width: thin;
+  border-left-style: solid;
+  border-left-color: #DE4043;
+}
+
+#rightEdge{ /*Specifies the border characteristics of the right hand side of the navigation bar*/
+  border-radius: 0px 5px 5px 0px; /*Adds curvature, specifying in the order of top left, top right, bottom right, bottom left*/
+  border-right-width: thin;
+  border-right-style: solid;
+  border-right-color: #DE4043;
+}
+
+
+header #branding{
+  float: left; /*Makes the branding move to the left side of the header*/
+}
+
+header h1{
+  margin: 0;
+  font-size: 15px;
+}
+
+header nav{ /*Makes the navigation bar move to the right side of the header, and adds a margin to move it down*/
+  float: right;
+  margin-top: 10px;
+}
+
+header .name{ /*Specifies the characteristics of the postion of the header that is wrapped in the span with class "name"*/
+  font-weight: 100; /*Specifies the weight of the font (ultralight, light, regular, heavy/bold)*/
+  font-size: 35px;
+  font-variant: small-caps;
+}
+
+header a:hover{ /*Adds a 'hover' feature, which takes effect when the user's mouse hovers over the link (in this case, the color is changed)*/
+  color: #8C8C8C;
+}
+
+#quote{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#quote_container{
+  width: 75%;
+  margin: auto;
+  overflow: hidden;
+}
+
+#quote h1{
+  font-size: 20px;
+  font-weight: 200;
+  font-style: italic;
+  text-align: center;
+}
+
+@keyframes slider{ /*Creates keyframes for the slider animation*/
+  0%{
+    left: 0;
+  }
+  20%{
+    left: 0;
+  }
+  25%{
+    left: -100%;
+  }
+  45%{
+    left: -100%;
+  }
+  50%{
+    left: -200%;
+  }
+  70%{
+    left: -200%;
+  }
+  75%{
+    left: -300%;
+  }
+  97%{
+    left: -300%;
+  }
+  100%{
+    left: 0;
+  }
+}
+
+#slider{
+  overflow: hidden;
+}
+
+#slider figure img{
+  width: 20%;
+  float: left; /*Puts all of the images in a line (the overflow is hidden, so only the current image is visible)*/
+  max-height: 500px; /*Sets a maximum height for the images within the slider*/
+}
+
+#slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  font-size: 0;
+  animation: 20s slider infinite; /*Specifies that the total slider animation lasts 20 seconds, and that is infinite*/
+}
+
+#boxes{
+  margin-top: 3%;
+}
+
+.label{
+  background: #DE4043;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15px;
+  color: white;
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 2%;
+}
+
+.label h1{
+  font-weight: 100;
+  font-size: 15px;
+  padding: none;
+}
+
+#boxes .box {
+  float: left; /*Places all of the 'boxes' in a line*/
+  width: 33.3%; /*Gives each 'box' a width that is roughly one-third (since there are three boxes) the total width of the screen*/
+  max-height: 90%; /*Sets a maximum height of 90% for each box*/
+}
+
+#boxes .box img{
+  width: 45px;
+  float: left;
+}
+
+.box a{
+  text-decoration: none;
+  color: #DE4043;
+}
+
+
+.box h3{
+  margin-left: 15%;
+}
+
+
+#photos{
+  margin-top: 3%;
+}
+
+#photos .image {
+  float: left; /*Places all of the images in a line*/
+  width: 33.3%; /*Gives each 'box' a width that is roughly one-third (since there are three images) the total width of the screen*/
+  max-height: 90%; /*Sets a maximum height of 90% for each image*/
+}
+
+#photos .image img{
+  width: 100%;
+  max-height: 90%;
+}
+
+#leftImage, #middleImage, #rightImage{ /*Sets a maximum width of 98% for each image*/
+ max-width: 98%;
+}
+
+.label{
+  background: #DE4043;
+  text-align: center;
+  border: solid 1px black;
+  border-radius: 15px;
+  color: white;
+  width: 20%;
+  margin-left: 40%;
+  margin-bottom: 2%;
+}
+
+footer{ /*Sets the background color, color, and spacing of the footer section*/
+  background-color: #DEDEDE;
+  color: #8C8C8C;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+#links{
+  background-color: #DEDEDE;
+  padding: 1%;
+  max-width: 100%;
+}
+
+footer a{
+  text-decoration: none;
+  color: #8C8C8C;
+}
+
+footer ul li{ /*Rules that are followed in all list items within unordered lists in the footer section*/
+  float: left;
+  display: inline; /*Puts all of the list items (which are links) in a line*/
+  padding: 0 1% 0 1%;
+}
+
+footer p{ /*Creates the line in the footer section, and moves the 'copyright' line so that it is aligned with the links above*/
+  border-top: solid 1px #8C8C8C;
+  margin-left: 0%;
+  padding-top: 1%;
+  padding-left: 2%;
+}
+
+@media (max-width: 1015px) { /*The next section is for making the site repsonsive -
+  when the user resizes the browser to 1015 pixels in width (or less), the following are changed*/
+    header #branding,
+    header nav,
+    #boxes .box,
+    #photos .image{
+      float: none;
+      text-align: center;
+      width: 100%;
+  }
+
+  header{
+    padding-bottom: 5px;
+  }
+
+  header .name{
+    font-size: 40px;
+  }
+
+  #branding{
+    margin-bottom: 3%;
+  }
+
+  header ul{
+    display: inline-block;
+    list-style-type: none;
+  }
+
+  header a{
+    font-size: 14px;
+  }
+
+
+  header ul li{ /*Rules that are followed in the list items within unordered lists in the header section (all of which are within the navigation bar)*/
+    background-color: #DE4043;
+    padding: 10px 20px 10px 20px;
+  }
+
+  #boxes{
+    margin-top: 20px;
+  }
+
+  #boxes .box {
+    padding: none;
+    padding-left: none;
+    max-height: 100%;
+    margin-bottom: 5%;
+  }
+
+
+  .box h3{
+    margin-left: 0px;
+  }
+
+
+  #boxes .box img{
+    width: 85px;
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .label{
+    background: #DE4043;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    color: white;
+    width: 20%;
+    margin-left: 40%;
+    margin-bottom: 3%;
+  }
+
+  .label h1{
+    font-weight: 100;
+    font-size: 80%;
+    padding: none;
+    text-align: center;
+  }
+
+
+  #photos .image img{
+    width: 100%;
+  }
+}
+  @media (max-width: 688px) { /*The next section is for making the site repsonsive -
+    when the user resizes the browser to 688 pixels in width (or less), the following are changed*/
+      header #branding,
+      header nav,
+      #boxes .box,
+      #photos .image{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+      padding-bottom: 5px;
+    }
+
+    header .name{
+      font-size: 25px;
+    }
+
+    #branding{
+      margin-bottom: 3%;
+    }
+
+    header ul{
+      display: inline-block;
+      list-style-type: none;
+    }
+
+    header a{
+      font-size: 10px;
+    }
+
+    header h1{
+      font-size: 12px;
+    }
+
+
+    header ul li{
+      background-color: #DE4043;
+      padding: 5px 5px 5px 5px;
+    }
+
+    #quote h1{
+      font-size: 15px;
+    }
+
+    #boxes{
+      margin-top: 20px;
+    }
+
+    #boxes .box {
+      padding: none;
+      padding-left: none;
+      max-height: 100%;
+      margin-bottom: 5%;
+    }
+
+
+    .box h3{
+      margin-left: 0px;
+      font-size: 15px;
+    }
+
+
+    #boxes .box img{
+      width: 50px;
+      display: block;
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .box p{
+      font-size: 12px;
+    }
+
+    .label{
+      background: #DE4043;
+      text-align: center;
+      border: solid 1px black;
+      border-radius: 15px;
+      color: white;
+      width: 20%;
+      margin-left: 40%;
+      margin-bottom: 7%;
+    }
+
+    .label h1{
+      font-weight: 100;
+      font-size: 80%;
+      padding: none;
+      text-align: center;
+    }
+
+    #photos .image img{
+      width: 100%;
+    }
+
+    #slider{
+      margin-bottom: 6%;
+    }
+
+    .label h1{
+      font-size: 9px;
+    }
+
+
+
+}
